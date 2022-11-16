@@ -34,9 +34,10 @@ body {
     align-items: center;
     flex-flow: column wrap;
     width: 40%;
-    height: 40rem;
+    min-height: 40rem;
     background: var(--bg-color);
     padding: 1.5rem;
+    word-break: break-all;
 }
 
 h1 {
@@ -68,4 +69,8 @@ button {
 
 #task_container {
     width: 100%;
+}
+
+#clearAll {
+    margin-top: 10rem;
 }
