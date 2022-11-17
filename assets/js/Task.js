@@ -9,22 +9,23 @@ export let Task = function (title) {
         let taskContent = document.createElement("p");
         taskContent.innerHTML = this.title;
 
-        let deleteButton = document.createElement("button");
-        deleteButton.innerHTML = "Delete";
+        let deleteButton = document.createElement("i");
+        deleteButton.className = "fa-solid fa-xmark";
+
 
         deleteButton.addEventListener("click", () => {
             taskContentContainer.remove();
         })
 
-        let validationButton = document.createElement("button");
-        validationButton.innerHTML = "Valid task";
+        let validationButton = document.createElement("i");
+        validationButton.className = "fa-solid fa-check";
 
         validationButton.addEventListener("click", () => {
             taskContent.style.textDecoration = "line-through";
         })
 
-        let editButton = document.createElement("button");
-        editButton.innerHTML = "Edit";
+        let editButton = document.createElement("i");
+        editButton.className = "fa-solid fa-pen-to-square";
 
         editButton.addEventListener("click", () => {
             taskContent.setAttribute("contenteditable", 'true');
