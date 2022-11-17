@@ -9,17 +9,17 @@ export let ValidationButton = function (name) {
     this.createButton = function () {
 
 
-        let button = document.createElement("button");
-        button.innerHTML = name;
+        let validationButton = document.createElement("button");
+        validationButton.innerHTML = name;
 
-        button.addEventListener("click", () => {
+        validationButton.addEventListener("click", () => {
             let task = new Task(document.querySelector("input").value);
             task.createTask();
             document.querySelector("input").value = "";
 
         })
 
-        textBarContainer.append(button);
+        textBarContainer.append(validationButton);
     }
 
 
