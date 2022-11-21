@@ -47,6 +47,7 @@ export let Task = function (title) {
         editButton.addEventListener("click", () => {
             taskContent.setAttribute("contenteditable", 'true');
             taskContent.style.border = "1px solid #95d6b7";
+            taskContent.focus();
             setTimeout(function () {
                 taskContent.removeAttribute("contenteditable");
                 taskContent.style.border = "none";
